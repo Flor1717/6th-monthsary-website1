@@ -1,35 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Happy 6th Monthsary</title>
+  <title>6th Monthsary Site</title>
   <style>
     body, html {
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      overflow: hidden;
+      margin: 0; padding: 0; height: 100vh; overflow: hidden;
     }
     #music-frame {
       position: fixed;
-      bottom: 10px;
-      right: 10px;
-      z-index: 999;
-      width: 200px;
-      height: 80px;
+      bottom: 10px; right: 10px;
+      width: 200px; height: 80px;
       border: none;
+      z-index: 10;
     }
     #content-frame {
-      width: 100%;
-      height: 100vh;
+      width: 100%; height: 100vh;
       border: none;
     }
   </style>
 </head>
 <body>
-  <!-- This iframe plays music and NEVER reloads -->
   <iframe id="music-frame" src="music.html"></iframe>
-
-  <!-- This is where all pages load -->
   <iframe id="content-frame" src="home.html" name="content-frame"></iframe>
 </body>
 </html>
