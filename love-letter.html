@@ -7,6 +7,7 @@
       background-color: #fff0f5;
       font-family: Arial, sans-serif;
       padding: 20px;
+      margin: 0;
     }
     .letter {
       background: white;
@@ -15,13 +16,12 @@
       padding: 30px;
       border-radius: 15px;
       box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      text-align: center;
     }
     h1 {
       color: #ff4081;
-      text-align: center;
     }
     .photo {
-      text-align: center;
       margin-top: 20px;
     }
     .photo img {
@@ -30,14 +30,15 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
     button {
+      margin: 20px auto 0;
       display: block;
-      margin: 20px auto;
       background: #ff4081;
       color: white;
       border: none;
       padding: 10px 20px;
       border-radius: 8px;
       cursor: pointer;
+      font-size: 1rem;
     }
     button:hover {
       background: #d63384;
@@ -52,12 +53,10 @@
     <p>I’m thankful for your love, your patience, and your light. One day soon, distance will just be a memory — and we’ll be side by side. Until then, know that I love you deeply and endlessly.</p>
     <p>Forever yours,</p>
     <p>Flori</p>
-
     <div class="photo">
       <img src="your-photo.jpg" alt="A photo of us">
     </div>
   </div>
-  <button onclick="location.href='index.html'">Back to Home</button>
-  <iframe src="music.html" width="200" height="80" style="border:none; position: fixed; bottom: 10px; right: 10px;"></iframe>
+  <button onclick="parent.contentFrame.location.href='home.html'">Back to Home</button>
 </body>
 </html>
